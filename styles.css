@@ -1,0 +1,44 @@
+*{box-sizing:border-box}
+:root{color-scheme:light;--ink:#18362f;--muted:#66776e;--line:#dbe1d9;--paper:#f3f2ec;--green:#214f40}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 6%;border-bottom:1px solid #d7ddd5}
+.brand{color:var(--ink);font-weight:700;text-decoration:none;font-size:18px;letter-spacing:-.4px}
+.brand-dot{color:#e68a5c}
+.header-note{font-size:13px;color:var(--muted)}
+main{max-width:1120px;margin:0 auto;padding:55px 24px 64px}
+.eyebrow{display:flex;align-items:center;gap:9px;color:#5b7166;text-transform:uppercase;letter-spacing:1.5px;font-size:11px;font-weight:700}
+.eyebrow span{width:7px;height:7px;border-radius:50%;background:#e68a5c}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,7vw,74px);font-weight:400;line-height:.99;letter-spacing:-2.6px;margin:23px 0 18px}
+h1 em{color:#789080;font-weight:400}
+.intro{color:#52675f;font-size:17px;line-height:1.6;margin:0 0 30px}
+.demo-note{display:flex;align-items:center;gap:13px;max-width:720px;background:#e8ece3;border:1px solid #d6ded4;border-radius:12px;padding:13px 15px;margin:0 0 30px}
+.demo-icon{display:grid;place-items:center;flex:0 0 24px;height:24px;border-radius:50%;background:#d4dfd4;color:#365a49;font-family:Georgia,serif;font-weight:bold}
+.demo-note p{margin:0;color:#52675f;font-size:13px;line-height:1.5;flex:1}
+.demo-note strong{color:var(--ink)}
+.reset-button{width:auto;border:0;background:transparent;color:#426150;text-decoration:underline;text-underline-offset:3px;font:inherit;font-size:12px;cursor:pointer;padding:8px}
+.reset-button:hover{color:#18362f}
+.notice{padding:15px 18px;margin:0 0 22px;border-radius:9px;background:#e2eee3;border-left:4px solid #397354;color:#254b38;font-size:14px;line-height:1.5}
+.notice.error{background:#f8e8e1;border-color:#b75b3e;color:#733923}
+section{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+article{display:flex;flex-direction:column;min-height:320px;background:#fff;border:1px solid var(--line);border-radius:15px;padding:23px;box-shadow:0 5px 18px rgba(34,59,45,.035)}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.category{margin:0;color:#708278;text-transform:uppercase;letter-spacing:1.1px;font-size:10px;font-weight:700}
+.club-number{color:#a4afa7;font-family:Georgia,serif;font-size:14px}
+h2{margin:23px 0 8px;font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:400;letter-spacing:-.5px}
+.schedule{margin:0;color:#64756c;font-size:13px}
+.places{display:flex;justify-content:space-between;gap:8px;margin:22px 0 18px;padding:13px 0;border-top:1px solid #e8ece7;border-bottom:1px solid #e8ece7;color:#53665b;font-size:12px}
+.places strong{color:#294d3c;font-weight:700}
+form{margin-top:auto}
+label{display:block;margin-bottom:7px;font-size:12px;font-weight:700}
+.form-row{display:flex;gap:8px}
+input,form button{font:inherit;border-radius:7px;min-height:42px}
+input{min-width:0;width:100%;padding:0 11px;border:1px solid #cbd5cc;background:#fff;color:var(--ink);outline:none}
+input:focus{border-color:#658b73;box-shadow:0 0 0 3px rgba(101,139,115,.14)}
+form button{flex:0 0 auto;padding:0 12px;background:var(--green);color:white;border:0;font-size:12px;font-weight:700;cursor:pointer;transition:background .15s}
+form button:hover{background:#163b2e}
+form button:disabled{background:#e3e7e2;color:#657067;cursor:default}
+.help{margin:22px 0 0;color:var(--muted);font-size:12px}
+code{padding:2px 5px;border-radius:4px;background:#e7e9e2;color:#334d3d;font-size:11px}
+footer{display:flex;justify-content:space-between;padding:18px 6%;border-top:1px solid #d7ddd5;color:#708076;font-size:11px}
+@media(max-width:760px){main{padding-top:42px}section{grid-template-columns:1fr}.demo-note{align-items:flex-start}.reset-button{align-self:center}}
+@media(max-width:440px){header{padding:18px 22px}.header-note{font-size:11px}main{padding:38px 18px 46px}h1{letter-spacing:-1.6px}.demo-note{flex-wrap:wrap}.demo-note p{flex-basis:calc(100% - 42px)}.reset-button{margin-left:37px}footer{padding:16px 20px;font-size:10px}}

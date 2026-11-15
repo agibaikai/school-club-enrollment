@@ -1,0 +1,4 @@
+Executed SQLite search results
+club_id | name | category | available_places
+1 | Robotics | Technology | 1
+2 | Debate | Communication | 2

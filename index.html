@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f2ec">
+  <meta name="description" content="Explore school clubs, check available places, and try a demo enrollment.">
+  <title>School Club Enrollment</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">School clubs<span class="brand-dot">.</span></a>
+    <span class="header-note">Find your next interest</span>
+  </header>
+  <main>
+    <div class="eyebrow"><span></span> Student activities · 2026</div>
+    <h1>Make time for<br><em>something you love.</em></h1>
+    <p class="intro">Explore our clubs, check available places and enroll in a few simple steps.</p>
+    <div class="demo-note">
+      <span class="demo-icon" aria-hidden="true">i</span>
+      <p><strong>Demo website</strong><br>Use a sample student ID to try it. Enrollment is saved in this browser only.</p>
+      <button id="reset-demo" class="reset-button" type="button">Reset demo</button>
+    </div>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <section id="clubs" aria-label="Available clubs"></section>
+    <p class="help">Sample student IDs: <code>101</code>, <code>102</code>, <code>103</code>, <code>104</code>. Try <code>101</code> to enroll.</p>
+  </main>
+  <footer><span>School Club Enrollment</span><span>Explore · Connect · Create</span></footer>
+</body>
+</html>
